@@ -21,4 +21,3 @@ def statistic_red(img,roi):
     blobs=img.find_blobs([red],roi)
     if blobs: return 1
     else: return 0
-

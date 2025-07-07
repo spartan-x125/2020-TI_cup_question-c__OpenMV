@@ -20,10 +20,12 @@ while True:
 
     #画区域
     blobs=find_red(img,[0,0,1000,1000])#roi值要改
+    uart.write(blobs.w,blobs.h,blobs.cx,blobs.cy,blobs.rotation)
     #or
     for i in range (0,4):
         img.draw_rectangle(roi[i][0],roi[i][1],roi[i][1]-roi[i][0],roi[i][2]-roi[i][0])
         flag[i]=statistic_red(img,roi[i])
+    uart.write(flag)
     #两者二择其一
 
 
