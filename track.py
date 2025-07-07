@@ -9,8 +9,6 @@ maxA=44
 minB=55
 maxB=66
 
-
-
 red=(minL,maxL,minA,maxA,minB,maxB)#红色阈值
 
 def find_red(img,roi):
